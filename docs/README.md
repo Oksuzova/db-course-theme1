@@ -3,17 +3,26 @@ home: true
 actionText: Розпочати →
 actionLink: /intro/
 
-footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
+footer: "ECL 2.0 Licensed | Copyright © [2024] [Tanya Oks]"
 ---
 
 
 **Виконали:** 
 
-*студенти [X]-го курсу, групи (шифр групи)* 
+*студентка 2-го курсу, групи ІО-з21)*
+<span padding-right:5em></span> **Оксюзова Тетяна** <a href="https://t.me/tanya_oks" target="_blank"> Telegram </a>
 
-**[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студентка 2-го курсу, групи ІО-з21)*
+<span padding-right:5em></span> **Морозова Єлізавета** <a href="https://t.me/vetamorozko" target="_blank"> Telegram </a>
 
-**[ім’я ПРІЗВИЩЕ] [Посилання email, tg, fb]**
+*студент 2-го курсу, групи ІО-з21)*
+<span padding-right:5em></span> **Булах Лєонід** <a href="https://t.me/LUNARxONE" target="_blank"> Telegram </a>
+
+*студент 2-го курсу, групи ІО-з21)*
+<span padding-right:5em></span> **Батюк Богдан** <a href="https://t.me/x7xgxlx6x" target="_blank"> Telegram </a>
+
+*студент 2-го курсу, групи ІО-з21)*
+<span padding-right:5em></span> **Османов Ізмаїл** <a href="https://t.me/smailsmnv" target="_blank"> Telegram </a>
 
 
 **Керівник**

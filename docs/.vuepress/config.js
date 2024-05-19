@@ -15,7 +15,7 @@ module.exports = {
     }]
   ],
   port: 3030,
-  base: '/docs/',
+  base: 'edu_db_labs_group1',
   theme: 'cool',
   // dest: 'dist',
   head: [
@@ -74,7 +74,7 @@ module.exports = {
 
     lastUpdated: 'Останнє оновлення', // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'https://github.com/boldak/edu-dis-labs',
+    repo: 'https://github.com/Oksuzova/db-course-theme1',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Github',
@@ -93,7 +93,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
+  title: '1.Система організації та управління опитуваннями експертів',
   description: 'Лабораторні роботи з дисципліни "Розподілені інформаційні системи"',
   configureWebpack: {
     resolve: {

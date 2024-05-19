@@ -1,9 +1,9 @@
 {
-  "name": "dis-edu",
+  "name": "edu_db_labs_group1",
   "version": "2.1.0",
   "main": "index.js",
   "description": "Databases course work template",
-  "repository": "https://github.com/boldak/dis-edu",
+  "repository": "https://github.com/Oksuzova/db-course-theme1",
   "author": "Andrey Boldak <boldak.andrey@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
