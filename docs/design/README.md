@@ -41,6 +41,7 @@ entity Question.survey
 entity Answer
 entity Answer.id
 entity Answer.option
+entity Answer.questionId
 
 entity Statistic
 entity Statistic.id
@@ -70,6 +71,7 @@ Question.survey --d-* Question
 
 Answer.id --u-* Answer
 Answer.option --u-* Answer
+Answer.questionId --u-* Answer
 
 Statistic.id --u-* Statistic
 Statistic.surveyId --u-* Statistic
@@ -85,3 +87,60 @@ Survey "1" -- "1" Statistic
 
 </div>
 
+<div style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
+
+@startuml
+
+entity Role {
+id: INT
+name: TEXT
+}
+
+entity User {
+id: INT
+nickname: TEXT
+email: TEXT
+password: TEXT
+roleId: INT
+}
+
+entity Survey {
+id: INT
+name: TEXT
+startDate: DATE
+endDate: DATE
+}
+
+entity AssignedSurvey {
+surveyId: INT
+userId: INT
+}
+
+entity Question {
+id: INT
+description: TEXT
+number: NUMBER
+surveyId: INT
+}
+
+entity Answer {
+id: INT
+option: TEXT
+questionId: INT
+}
+
+entity Statistic {
+id: INT
+surveyId: INT
+}
+
+User "0," -d- "1" Role : roleId
+Survey "0," -r- "1" User
+Survey "1" -l- "1,3" Question : surveyId
+Survey "1" -u- "0,*" AssignedSurvey : surveyId
+Question "1,3" -- "1" Answer : questionId
+Survey "1" -- "1" Statistic : surveyId
+
+@enduml
+
+</div>
