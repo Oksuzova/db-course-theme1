@@ -1,4 +1,3 @@
-// .vuepress/config.js
 module.exports = {
     plugins: [
         "@vuepress/back-to-top",
@@ -7,7 +6,6 @@ module.exports = {
             serviceWorker: true,
             updatePopup: true,
         },
-        ,
         [
             "container",
             {
@@ -20,7 +18,6 @@ module.exports = {
     port: 3030,
     base: "/db-course-theme1/",
     theme: "cool",
-    // dest: 'dist',
     head: [
         ["link", { rel: "icon", href: "/favicon.ico" }],
         [
@@ -39,7 +36,6 @@ module.exports = {
         ],
     ],
     themeConfig: {
-        // logo: './myAvatar.png',
         sidebar: [
             {
                 title: "Вступ",
@@ -53,22 +49,18 @@ module.exports = {
                     "/requirements/stakeholders-needs",
                 ],
             },
-
             {
-                title: "Розроблення вимог до функціональности системи",
-                path: "/use-cases/",
+                title: 'Розроблення вимог до функціональности системи',
+                path:"/use cases/"
             },
-
             {
                 title: "Проектування інформаційного забезпечення",
                 path: "/design/",
             },
-
             {
                 title: "Реалізація інформаційного та програмного забезпечення",
                 path: "/software/",
             },
-
             {
                 title: "Тестування працездатності системи",
                 path: "/test/",
@@ -79,33 +71,16 @@ module.exports = {
             },
         ],
         sidebarDepth: 2,
-        displayAllHeaders: true, // Default: false
-
+        displayAllHeaders: true,
         nav: [{ text: "Початок", link: "/" }],
-
-        lastUpdated: "Останнє оновлення", // string | boolean
-        // Assumes GitHub. Can also be a full GitLab url.
+        lastUpdated: "Останнє оновлення",
         repo: "https://github.com/Oksuzova/db-course-theme1",
-        // Customising the header label
-        // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
         repoLabel: "Github",
-
-        // Optional options for generating "Edit this page" link
-
-        // if your docs are in a different repo from your main project:
-        // docsRepo: 'boldak/dis-edu',
-        // if your docs are not at the root of the repo:
         docsDir: "docs",
-        // if your docs are in a specific branch (defaults to 'master'):
         docsBranch: "master",
-        // defaults to false, set to true to enable
-        // editLinks: true,
-        // custom text for edit link. Defaults to "Edit this page"
-        // editLinkText: 'Ви можете покращити цю сторінку'
     },
     title: "4. Система управління проектами",
-    description:
-        'Лабораторні роботи з дисципліни "Розподілені інформаційні системи"',
+    description: 'Лабораторні роботи з дисципліни "Розподілені інформаційні системи"',
     configureWebpack: {
         resolve: {
             alias: {

@@ -2,7 +2,7 @@
 
 ## Модель бізнес-об'єктів
 
-<div style="
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -85,9 +85,9 @@ Survey "1" -- "1" Statistic
 
 @enduml
 
-</div>
+</center>
 
-<div style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
+<center style="border-radius:4px; border: 1px solid #cfd7e6; box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025); padding: 1em;">
 
 @startuml
 
@@ -146,11 +146,11 @@ Survey         "1" *-[#595959,plain]-> "questions\n*" Question
 User           "1" *-[#595959,plain]-> "roleId\n1" Role           
 @enduml
 
-</div>
+</center>
 
 ## Реляційна схема
 
-<div style="
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -159,4 +159,4 @@ User           "1" *-[#595959,plain]-> "roleId\n1" Role
 
 <img src="./relational_schema.png">
 
-</div>
+</center>

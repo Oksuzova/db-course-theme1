@@ -2,7 +2,7 @@
 
 ## Загальна схема
 
-<div style="
+<center style="
     border-radius:15px;
     border: 5px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(100,150,150,50), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -42,11 +42,11 @@ Admin -u-> ViewStatistics
 
 @enduml
 
-</div>
+</center>
 
 ## Схема використання для Користувача
 
-<div style="
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -65,11 +65,11 @@ User --> Registration
 Login .u.> RecoveryPassword
 Registration .u.> RegistrationWithEmail
 @enduml
-</div>
+</center>
 
 ## Схема використання для Експерта
 
-<div style="
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -90,11 +90,11 @@ TakeSurvey .u.> SaveAnswers
 
 @enduml
 
-</div>
+</center>
 
 ## Схема використання для Адміністратора
 
-<div style="
+<center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
     box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
@@ -129,7 +129,7 @@ ViewStatistics <.r. FilterByName : Extends
 
 @enduml
 
-</div>
+</center>
 
 ## Сценарії використання
 
