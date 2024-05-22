@@ -1,16 +1,16 @@
 {
-  "name": "edu_db_labs_group1",
+  "name": "dis-edu",
   "version": "2.1.0",
   "main": "index.js",
   "description": "Databases course work template",
-  "repository": "https://github.com/Oksuzova/db-course-theme1",
+  "repository": "https://github.com/boldak/dis-edu",
   "author": "Andrey Boldak <boldak.andrey@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
     "test": "jest",
     "docs:api": "jsdoc2md  src/**/*.js  > docs/api/README.md",
-    "docs:dev": "npm run docs:api && npx vuepress dev docs",
-    "docs:build": "npm run docs:api && npx vuepress build docs",
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs",
     "publish": "publish.sh"
   },
   "dependencies": {
