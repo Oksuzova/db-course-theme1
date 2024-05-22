@@ -135,7 +135,7 @@ surveyId: INT
 }
 
 User "0," -d- "1" Role : roleId
-Survey "0," -r- "1" User
+User "0," -l- "1" AssignedSurvey : userId
 Survey "1" -l- "1,3" Question : surveyId
 Survey "1" -u- "0,*" AssignedSurvey : surveyId
 Question "1,3" -- "1" Answer : questionId
@@ -145,3 +145,15 @@ Survey "1" -- "1" Statistic : surveyId
 
 </div>
 
+## Реляційна схема
+
+<div style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em; text-align: center;"
+>
+
+<img src="./relational_schema.png">
+
+</div>
