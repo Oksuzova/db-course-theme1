@@ -91,56 +91,59 @@ Survey "1" -- "1" Statistic
 
 @startuml
 
-entity Role {
-id: INT
-name: TEXT
-}
+!theme plain
+top to bottom direction
+skinparam linetype ortho
 
-entity User {
-id: INT
-nickname: TEXT
-email: TEXT
-password: TEXT
-roleId: INT
-}
+class Answer {
+- option: String
+- id: Long
+- question: Question
+  }
+  class AssignedSurvey {
+- surveyId: Long
+- survey: Survey
+- user: User
+- userId: Long
+  }
+  class Question {
+- survey: Survey
+- id: Long
+- answer: Answer
+- number: Long
+- description: String
+  }
+  class Role {
+- id: Long
+- name: String
+  }
+  class Statistic {
+- id: Long
+- survey: Survey
+  }
+  class Survey {
+- id: Long
+- questions: List<Question>
+- name: String
+- endDate: Date
+- startDate: Date
+  }
+  class User {
+- nickname: String
+- email: String
+- id: Long
+- password: String
+- roleId: Role
+  }
 
-entity Survey {
-id: INT
-name: TEXT
-startDate: DATE
-endDate: DATE
-}
-
-entity AssignedSurvey {
-surveyId: INT
-userId: INT
-}
-
-entity Question {
-id: INT
-description: TEXT
-number: NUMBER
-surveyId: INT
-}
-
-entity Answer {
-id: INT
-option: TEXT
-questionId: INT
-}
-
-entity Statistic {
-id: INT
-surveyId: INT
-}
-
-User "0," -d- "1" Role : roleId
-User "0," -l- "1" AssignedSurvey : userId
-Survey "1" -l- "1,3" Question : surveyId
-Survey "1" -u- "0,*" AssignedSurvey : surveyId
-Question "1,3" -- "1" Answer : questionId
-Survey "1" -- "1" Statistic : surveyId
-
+Answer         "1" *-[#595959,plain]-> "question\n1" Question       
+AssignedSurvey "1" *-[#595959,plain]-> "survey\n1" Survey         
+AssignedSurvey "1" *-[#595959,plain]-> "user\n1" User           
+Question       "1" *-[#595959,plain]-> "answer\n1" Answer         
+Question       "1" *-[#595959,plain]-> "survey\n1" Survey         
+Statistic      "1" *-[#595959,plain]-> "survey\n1" Survey         
+Survey         "1" *-[#595959,plain]-> "questions\n*" Question       
+User           "1" *-[#595959,plain]-> "roleId\n1" Role           
 @enduml
 
 </div>

@@ -1,0 +1,56 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class Answer {
+  - option: String
+  - id: Long
+  - question: Question
+}
+class AssignedSurvey {
+  - surveyId: Long
+  - survey: Survey
+  - user: User
+  - userId: Long
+}
+class Question {
+  - survey: Survey
+  - id: Long
+  - answer: Answer
+  - number: Long
+  - description: String
+}
+class Role {
+  - id: Long
+  - name: String
+}
+class Statistic {
+  - id: Long
+  - survey: Survey
+}
+class Survey {
+  - id: Long
+  - questions: List<Question>
+  - name: String
+  - endDate: Date
+  - startDate: Date
+}
+class User {
+  - nickname: String
+  - email: String
+  - id: Long
+  - password: String
+  - roleId: Role
+}
+
+Answer         "1" *-[#595959,plain]-> "question\n1" Question       
+AssignedSurvey "1" *-[#595959,plain]-> "survey\n1" Survey         
+AssignedSurvey "1" *-[#595959,plain]-> "user\n1" User           
+Question       "1" *-[#595959,plain]-> "answer\n1" Answer         
+Question       "1" *-[#595959,plain]-> "survey\n1" Survey         
+Statistic      "1" *-[#595959,plain]-> "survey\n1" Survey         
+Survey         "1" *-[#595959,plain]-> "questions\n*" Question       
+User           "1" *-[#595959,plain]-> "roleId\n1" Role           
+@enduml
