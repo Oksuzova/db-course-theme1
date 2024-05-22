@@ -35,12 +35,7 @@ module.exports = {
 
             {
                 title: 'Розроблення загальних вимог до системи',
-                path: "/requirements/",
-                children: [
-                    '/requirements/state-of-the-art',
-                    '/requirements/stakeholders-needs',
-                ]
-
+                path: "/requirements/"
             },
 
             {
