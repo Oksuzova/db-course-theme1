@@ -15,7 +15,7 @@ module.exports = {
         }]
     ],
     port: 3030,
-    base: 'edu_db_labs_group1',
+    base: 'db-course-theme1',
     theme: 'cool',
     // dest: 'dist',
     head: [
